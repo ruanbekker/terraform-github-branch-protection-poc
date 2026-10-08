@@ -34,6 +34,9 @@ jobs:
 
   infra:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: terraform
     steps:
       - uses: actions/checkout@v4
 
